@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context="com.coyotestudio.toastapp.MainActivity">
+
+  <Button
+    android:layout_width="168dp"
+    android:layout_height="64dp"
+    android:layout_marginTop="108dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginLeft="32dp"
+    android:background="@color/colorPrimaryDark"
+    android:text="@string/toast_text"
+    android:textColor="@android:color/white"
+    android:textSize="32sp"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+
+  <Button
+    android:id="@+id/button"
+    android:layout_width="168dp"
+    android:layout_height="64dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginLeft="32dp"
+    android:background="@color/colorPrimaryDark"
+    android:text="@string/count_text"
+    android:textColor="@android:color/white"
+    android:textSize="32sp"
+    app:layout_constraintBaseline_toBaselineOf="@+id/show_count"
+    app:layout_constraintStart_toStartOf="parent"/>
+
+  <TextView
+    android:id="@+id/show_count"
+    android:textStyle="bold"
+    android:layout_width="634dp"
+    android:layout_height="689dp"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
+    android:background="@color/colorAccent"
+    android:gravity="center"
+    android:text="@string/show_account_text"
+    android:textColor="@android:color/white"
+    android:textSize="@android:dimen/thumbnail_width"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
