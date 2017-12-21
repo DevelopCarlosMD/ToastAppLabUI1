@@ -7,5 +7,7 @@
 
   <string name="new_layout_relative">Relative UI View</string>
   <string name="new_layout_lineal">Lineal UI View</string>
+  <string name="reminder">Reminder</string>
+  <string name="done">Done</string>
 
 </resources>
