@@ -1,6 +1,11 @@
 <resources>
+
   <string name="app_name">ToastApp</string>
   <string name="toast_text">Toast</string>
   <string name="count_text">Count</string>
   <string name="show_account_text">0</string>
+
+  <string name="new_layout_relative">Relative UI View</string>
+  <string name="new_layout_lineal">Lineal UI View</string>
+
 </resources>

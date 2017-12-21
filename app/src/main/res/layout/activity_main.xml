@@ -8,9 +8,10 @@
   tools:context="com.coyotestudio.toastapp.MainActivity">
 
   <Button
+    android:id="@+id/button2"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:layout_marginTop="28dp"
+    android:layout_marginTop="32dp"
     android:layout_marginStart="16dp"
     android:layout_marginLeft="16dp"
     android:background="@color/colorPrimaryDark"
@@ -29,16 +30,17 @@
     android:background="@color/colorPrimaryDark"
     android:text="@string/count_text"
     android:textColor="@android:color/white"
-    app:layout_constraintStart_toStartOf="parent"
-    tools:layout_editor_absoluteY="203dp"/>
+    app:layout_constraintBaseline_toBaselineOf="@+id/show_count"
+    app:layout_constraintStart_toStartOf="parent"/>
 
   <TextView
     android:id="@+id/show_count"
     android:textStyle="bold"
     android:layout_width="223dp"
-    android:layout_height="wrap_content"
-    android:layout_marginTop="16dp"
+    android:layout_height="255dp"
+    android:layout_marginTop="32dp"
     android:layout_marginEnd="16dp"
+    android:layout_marginRight="16dp"
     android:background="@color/colorAccent"
     android:gravity="center"
     android:text="@string/show_account_text"
