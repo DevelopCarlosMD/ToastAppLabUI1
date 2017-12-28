@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.coyotestudio.toastapp.inplicit_intent_ex.ImplicitIntent">
+
+    <EditText
+        android:id="@+id/edt_website_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/url" />
+
+    <Button
+        android:id="@+id/btn_open_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="opeWebSite"
+        android:text="@string/text_open_web" />
+
+
+    <EditText
+        android:id="@+id/edt_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/text_location" />
+
+    <Button
+        android:id="@+id/btn_open_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openLocation"
+        android:text="@string/text_open_location" />
+
+    <EditText
+        android:id="@+id/edt_share_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:hint="@string/text_user" />
+
+    <Button
+        android:id="@+id/btn_share_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="shareThis"
+        android:text="@string/text_share" />
+
+
+</LinearLayout>

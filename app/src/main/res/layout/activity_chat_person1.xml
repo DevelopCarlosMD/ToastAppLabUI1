@@ -24,7 +24,7 @@
         android:layout_below="@id/tv_header_reply"
         android:layout_marginLeft="@dimen/activity_horizontal_margin"
         android:layout_marginStart="@dimen/activity_horizontal_margin"
-        android:textSize="?android:attr/textAppearanceMedium"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         android:visibility="invisible" />
 
 

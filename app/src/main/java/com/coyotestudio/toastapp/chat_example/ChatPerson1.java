@@ -29,14 +29,50 @@ public class ChatPerson1 extends AppCompatActivity {
         mReplyHeadTextView = (TextView) findViewById(R.id.tv_header_reply);
         mReplyTextView = (TextView) findViewById(R.id.tv_message_reply);
 
+        if(savedInstanceState != null){
+            boolean isVisible =
+                    savedInstanceState.getBoolean("reply_visible");
+
+            if (isVisible){
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(savedInstanceState.getString("reply_text"));
+                mReplyTextView.setVisibility(View.VISIBLE);
+            }
+        }
+
     }
+
 
     public void launchSecondActivity(View view) {
         //Log.i(TAG, "Button was clicked");
         String message = edtMesasage.getText().toString();
         Intent intent = new Intent(this, ChatPerson2.class);
         intent.putExtra(EXTRA_MESSAGE, message);
+        startActivityForResult(intent, TEXT_REQUEST);
 
-        startActivity(intent);
+    }
+
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+
+        if (requestCode == TEXT_REQUEST) {
+            if (resultCode == RESULT_OK) {
+                String reply = data.getStringExtra(ChatPerson2.EXTRA_REPLY);
+
+                mReplyHeadTextView.setVisibility(View.VISIBLE);
+                mReplyTextView.setText(reply);
+                mReplyTextView.setVisibility(View.VISIBLE);
+                //edtMesasage.setText("");
+            }
+        }
+    }
+
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        if (mReplyHeadTextView.getVisibility() == View.VISIBLE){
+            outState.putBoolean("reply_visible", true);
+            outState.putString("reply_text", mReplyTextView.getText().toString());
+        }
     }
 }

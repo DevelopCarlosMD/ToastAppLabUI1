@@ -10,27 +10,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity
-            android:name=".chat_example.ChatPerson1"
-            android:screenOrientation="portrait">
+        <activity android:name=".inplicit_intent_ex.ImplicitIntent">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <!--<activity android:name=".chat_example.ChatPerson1">
-      </activity>-->
+        <!--
+      <activity android:name=".chat_example.ChatPerson1">
+      </activity>
+        -->
         <activity
             android:name=".chat_example.ChatPerson2"
             android:label="@string/activity2_name"
-            android:parentActivityName=".chat_example.ChatPerson1"
-            android:screenOrientation="portrait" >
-
+            android:parentActivityName=".chat_example.ChatPerson1">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.coyotestudio.toastapp.chat_example.ChatPerson1"/>
-
+                android:value="com.coyotestudio.toastapp.chat_example.ChatPerson1" />
         </activity>
+        <!--<activity android:name=".inplicit_intent_ex.ImplicitIntent"></activity>-->
     </application>
+
 </manifest>

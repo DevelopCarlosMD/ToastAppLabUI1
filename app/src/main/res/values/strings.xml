@@ -16,5 +16,11 @@
     <string name="reply">Reply</string>
     <string name="hint_second_msg">Enter Your Reply Here</string>
     <string name="text_header_reply">Reply Received</string>
+    <string name="url">Intro your URL</string>
+    <string name="text_open_web">Open Website</string>
+    <string name="text_location">Intro your location</string>
+    <string name="text_user">Intro your text</string>
+    <string name="text_open_location">Open Location</string>
+    <string name="text_share">Shate This Text</string>
 
 </resources>

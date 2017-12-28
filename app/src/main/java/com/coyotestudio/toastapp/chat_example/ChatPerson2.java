@@ -11,7 +11,7 @@ import com.coyotestudio.toastapp.R;
 
 public class ChatPerson2 extends AppCompatActivity {
 
-    private static final String EXTRA_REPLY =
+    public static final String EXTRA_REPLY =
             "com.coyotestudio.toastapp.chat_example.extra_REPLY";
     private TextView tvMessage;
     private EditText mReply;
