@@ -1,13 +1,20 @@
 <resources>
 
-  <string name="app_name">ToastApp</string>
-  <string name="toast_text">Toast</string>
-  <string name="count_text">Count</string>
-  <string name="show_account_text">0</string>
+    <string name="app_name">ToastApp</string>
+    <string name="toast_text">Toast</string>
+    <string name="count_text">Count</string>
+    <string name="show_account_text">0</string>
 
-  <string name="new_layout_relative">Relative UI View</string>
-  <string name="new_layout_lineal">Lineal UI View</string>
-  <string name="reminder">Reminder</string>
-  <string name="done">Done</string>
+    <string name="new_layout_relative">Relative UI View</string>
+    <string name="new_layout_lineal">Lineal UI View</string>
+    <string name="reminder">Reminder</string>
+    <string name="done">Done</string>
+    <string name="send">Send</string>
+    <string name="activity2_name">Second Activity</string>
+    <string name="text_header">Message Received</string>
+    <string name="hint_message">Enter Your Message Here</string>
+    <string name="reply">Reply</string>
+    <string name="hint_second_msg">Enter Your Reply Here</string>
+    <string name="text_header_reply">Reply Received</string>
 
 </resources>
